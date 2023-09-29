@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        
+        <nav>
+            <a href="/comments">Great Quotes</a>
+            <div class="links">
+                <a href="/comments">All Quotes</a>
+                <a href="/comments/new">New Quotes</a>
+            </div>
+        </nav>
+    </div>
+    <div class="form">
+    <form action="/comments" method="post">
+        <label for="user">Author:</label>
+        <br>
+        <input type="text" id="user" name="username" placeholder="Author's name">
+        <br>
+        
+        <label for="comment">Quote:</label>
+        <br>
+        
+        <textarea  id="comment" name="comment" placeholder="Author's Quote" cols="30" rows="3"></textarea>
+        <br>
+        <button type="submit">Add Quote</button>
+    </form>
+</div>
+</body>
+</html>

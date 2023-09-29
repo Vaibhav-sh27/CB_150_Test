@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <div class="nav">
+        
+        <nav>
+            <a href="/comments">Great Quotes</a>
+            <div class="links">
+                <a href="/comments">All Quotes</a>
+                <a href="/comments/new">New Quotes</a>
+            </div>
+        </nav>
+    </div>
+        <h1 style="display: block;">All Quotes</h1>
+    <div class="wrap" style="padding-top: 120px;">
+    <div class="outer">
+      <%for(let i of comments){%>
+      <div class="comment">
+        <div class="quotes">
+          <!-- <h1><%= i.id %></h1> -->
+          <div class="q" style="width: 30vw;">
+            <h2><i><%= i.comment %></i></h2>
+          </div>
+          <br>
+          <p>~ <%= i.username %></p>
+        </div>
+        <a href="/comments/<%=i.id %>"><button> View full Qoute</button></a>
+      </div>
+      <%}%>
+    </div>
+  </div>
+  </body>
+</html>
